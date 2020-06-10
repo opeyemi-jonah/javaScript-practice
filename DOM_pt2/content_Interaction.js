@@ -1,1 +1,1 @@
-var p = 
+var p = document.querySelector('p');
