@@ -11,9 +11,9 @@
     <div class="tictac">
             <table>
                     <tr>
-                        <th id='one'></th>
-                        <th id='two'></th>
-                        <th id='three'></th>
+                        <td id='one'></th>
+                        <td id='two'></th>
+                        <td id='three'></th>
                     </thr>
                     <tr>
                         <td id='four'></td>
@@ -31,13 +31,38 @@
     </div>
     
     <script>
-        let id = ["#one","#two","#three","#four","#five","#six","#seven","#eight","#nine"];
-let a,b,c,d,e,f,g,h,i,j;
-        a = document.querySelector("#one");
-        b
+//         let id = ["#one","#two","#three","#four","#five","#six","#seven","#eight","#nine"];
+// let a,b,c,d,e,f,g,h,i,j;
+//         a = document.querySelector("#one");
+//         b 
         
-        d.addEventListener('click', (e)=>{
+        // d.addEventListener('click', (e)=>{
+        //     console.log(e.target);
+
+        // })
+        
+
+        window.addEventListener('click', (e)=>{
+            
+           let h =document.getElementsByTagName(`${e.target}`)
+            console.log(h)
+            
+           e.target.value = "X" ;
+
+            // console.log(e.target);
+
+           h.innerText = e.target.value;
+
+
+        })
+
+        window.addEventListener('dblclick', (e)=>{
             console.log(e.target);
+           
+           e.target.value = "O" ;
+           
+        //    h.innerText = e.target.value;
+
         })
 
 console.log("hello tic")
